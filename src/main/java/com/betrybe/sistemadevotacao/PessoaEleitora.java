@@ -1,6 +1,10 @@
 package com.betrybe.sistemadevotacao;
 
-public class PessoaEleitora extends Pessoa{
+/**
+ * Classe responsável pela pessoa Eleitora.
+ */
+public class PessoaEleitora extends Pessoa {
+
   private String cpf;
 
   public PessoaEleitora(String nome, String cpf) {

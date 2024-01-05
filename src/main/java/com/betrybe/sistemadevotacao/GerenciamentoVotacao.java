@@ -2,6 +2,9 @@ package com.betrybe.sistemadevotacao;
 
 import java.util.ArrayList;
 
+/**
+ * Classe para gerenciar a votação.
+ */
 public class GerenciamentoVotacao implements GerenciamentoVotacaoInterface {
 
   private ArrayList<PessoaCandidata> pessoasCandidatas = new ArrayList<>();
@@ -56,7 +59,7 @@ public class GerenciamentoVotacao implements GerenciamentoVotacaoInterface {
     }
 
     for (PessoaCandidata candidata : pessoasCandidatas) {
-      int percent = (candidata.getVotos() / cpfsComputados.size()) * 100;
+      int percent = (int) (((double) candidata.getVotos() / cpfsComputados.size()) * 100);
 
       System.out.printf("Nome: %s - %d votos ( %d%n", candidata.getNome(), candidata.getVotos(),
           percent);

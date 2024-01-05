@@ -2,8 +2,16 @@ package com.betrybe.sistemadevotacao;
 
 import java.util.Scanner;
 
+/**
+ * Classe Principal responsável pela interface do usuário.
+ */
 public class Principal {
 
+  /**
+   * Método de execução padrão.
+   *
+   * @param args Argumentos
+   */
   public static void main(String[] args) {
     GerenciamentoVotacao gerenciamentoVotacao = new GerenciamentoVotacao();
 
